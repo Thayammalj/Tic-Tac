@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(132, 132, 224);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+.container{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #eccc68;
+    box-shadow: 0 0 2px #eccc68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+#status{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+button{
+    /* width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 3px; */
+    color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #969bd5;
+  cursor: pointer;
+  border: 1px solid #d1b1f8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #beadf8, -6px -6px 12px #ffffff;
+}
+button:active {
+    color: #eddddd;
+    box-shadow: inset 4px 4px 12px #c6b1f3, inset -4px -4px 12px #ffffff;
+}
+  
+img{
+    height: 80px;
+}
+.win{
+  animation: WinAnimation ease-in-out 1s infinite;
+}
+@keyframes WinAnimation{
+    0%{background-color:rgb(79, 79, 240)  ;}
+    100%{background: #87d7e5;}
+
+}
